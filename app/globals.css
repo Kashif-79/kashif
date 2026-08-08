@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  background-color: #f8fafc;
+}
+
+html.dark {
+  background-color: #07111f;
+}
+
+body {
+  color: #0f172a;
+  background-color: #f8fafc;
+}
+
+html.dark body {
+  color: #e2e8f0;
+  background: linear-gradient(135deg, #07111f 0%, #0f2b47 45%, #133d63 100%);
+}
