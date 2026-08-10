@@ -17,8 +17,16 @@ const NAV_ITEMS = [
 
 const SOCIALS = [
   { icon: FaGithub, label: "GitHub", href: "https://github.com/Kashif-79" },
-  { icon: FaLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/kashifur-rahman-reza/" },
-  { icon: GiNotebook, label: "Resume", href: "/KashifurRahmanReza.pdf" },
+  {
+    icon: FaLinkedin,
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/kashifur-rahman-reza/",
+  },
+  {
+    icon: GiNotebook,
+    label: "Resume",
+    href: "/Kashifur_Rahman_Reza_Resume(Full_Stack).pdf",
+  },
 ];
 
 const MobileHeader = () => {

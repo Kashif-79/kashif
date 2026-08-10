@@ -18,7 +18,11 @@ const SOCIALS = [
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/kashifur-rahman-reza/",
   },
-  { icon: GiNotebook, label: "Resume", href: "/KashifurRahmanReza.pdf" },
+  {
+    icon: GiNotebook,
+    label: "Resume",
+    href: "/Kashifur_Rahman_Reza_Resume(Full_Stack).pdf",
+  },
 ];
 
 const Sidebar = ({ theme }) => {
