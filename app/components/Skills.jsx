@@ -5,23 +5,28 @@ import { motion } from "framer-motion";
 const skillGroups = [
   {
     label: "languages",
-    items: ["JavaScript", "TypeScript"],
-    dotColor: "bg-yellow-500 shadow-yellow-500/50",
+    items: ["JavaScript", "TypeScript", "SQL"],
+    dotColor: "group-hover:bg-yellow-500 group-hover:shadow-yellow-500/50",
   },
   {
     label: "frontend",
-    items: ["React.js", "Redux"],
-    dotColor: "bg-blue-500 shadow-blue-500/50",
+    items: ["React.js", "HTML5", "CSS3", "Tailwind CSS"],
+    dotColor: "group-hover:bg-blue-500 group-hover:shadow-blue-500/50",
   },
   {
     label: "backend",
-    items: ["Node.js", "Express.js"],
-    dotColor: "bg-green-500 shadow-green-500/50",
+    items: ["Node.js", "Express.js", "RESTful API Design"],
+    dotColor: "group-hover:bg-green-500 group-hover:shadow-green-500/50",
   },
   {
-    label: "database",
-    items: ["MongoDB", "Mongoose", "PostgreSQL", "Prisma"],
-    dotColor: "bg-purple-500 shadow-purple-500/50",
+    label: "databases",
+    items: ["MongoDB", "PostgreSQL", "MySQL"],
+    dotColor: "group-hover:bg-purple-500 group-hover:shadow-purple-500/50",
+  },
+  {
+    label: "ORM / ODM",
+    items: ["Prisma", "Mongoose"],
+    dotColor: "group-hover:bg-fuchsia-500 group-hover:shadow-fuchsia-500/50",
   },
 ];
 

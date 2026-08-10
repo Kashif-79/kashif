@@ -30,15 +30,26 @@ const Sidebar = ({ theme }) => {
   const isDark = theme === "dark";
 
   return (
-    <header className="flex flex-col lg:min-h-screen lg:w-2/5 lg:justify-between lg:self-start lg:sticky lg:top-0 lg:py-24 lg:pr-12">
+    <header className="mb-10 flex flex-col lg:mb-0 lg:min-h-screen lg:w-2/5 lg:justify-between lg:self-start lg:sticky lg:top-0 lg:py-24 lg:pr-12">
       <div>
-        <h1 className="mb-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-100">
+        <h1 className="mb-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">
           Kashifur Rahman Reza
         </h1>
-        <h2 className="mb-4 text-lg font-medium text-slate-600 dark:text-slate-300">
+        <h2 className="mb-3 text-lg font-medium text-slate-600 dark:text-slate-300">
           Full-Stack Web Developer
         </h2>
-        <div className="mb-6 flex items-center gap-4 lg:hidden">
+        <p className="mb-10 max-w-xs leading-relaxed text-slate-500 dark:text-slate-400">
+          I build full-stack web apps with{" "}
+          <span className="text-slate-700 dark:text-slate-200">React</span>,{" "}
+          <span className="text-slate-700 dark:text-slate-200">Node.js</span>,
+          and
+          <span className="text-slate-700 dark:text-slate-200">
+            {" "}
+            PostgreSQL/MongoDB
+          </span>
+          .
+        </p>
+        <div className="mt-6 mb-10 flex items-center gap-4 lg:hidden">
           {SOCIALS.map((s) => (
             <a
               key={s.label}
@@ -56,13 +67,8 @@ const Sidebar = ({ theme }) => {
             </a>
           ))}
         </div>
-        <p className="mb-10 max-w-xs leading-relaxed text-slate-500 dark:text-slate-400">
-          I build full-stack web apps with React, Node.js, and
-          PostgreSQL/MongoDB — grounded in a Statistics background. Currently
-          open to remote entry-level roles.
-        </p>
 
-        <nav>
+        <nav className="hidden lg:block">
           <ul className="space-y-4">
             {NAV_ITEMS.map((item) => {
               const isActive = active === item.id;
@@ -96,7 +102,7 @@ const Sidebar = ({ theme }) => {
         </nav>
       </div>
 
-      <div className="hidden items-center gap-5 lg:flex">
+      <div className="hidden items-center gap-5 lg:flex lg:-mt-2">
         {SOCIALS.map((s) => (
           <a
             key={s.label}
